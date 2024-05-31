@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgba(26, 8, 48, 0.693);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    background-color: rgb(39, 39, 39);
+    color: rgb(73, 76, 78);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 350px;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 0.5rem;
+
+}
+
+
+.pantalla {
+    grid-column: 1/5;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: right;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.boton{
+    background-color: rgb(95, 95, 95);
+    color: rgb(255, 255, 255);
+    border: 0;
+    padding: 1rem;
+    font-size: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: rgba(53, 53, 53, 0.817);
+}
+
+
+#cero {
+grid-column: span 2;
+}
+
+#igual{
+    grid-row: span 2;
+    background-color: rgb(81, 139, 214);
+}
+
+#igual:hover{
+    background-color: rgb(27, 119, 224);
+    box-shadow: 0 0 10px rgb(27, 119, 224), 0 0 10px rgb(27, 119, 224);
+}
+
+#limpiar{
+    background-color: rgb(214, 60, 60);
+}
+
+#limpiar:hover{
+    background-color: rgb(207, 16, 16);
+    box-shadow: 0 0 10px rgb(207, 16, 16), 0 0 10px rgb(207, 16, 16);
+}
+
+
+#borrar, #sum, #rest, #divi, #multi{
+    background-color: rgb(58, 57, 57);
+}
+
+#borrar:hover, #sum:hover, #rest:hover, #divi:hover, #multi:hover{
+    background-color: rgb(87, 221, 109);
+    box-shadow: 0 0 10px lightgreen, 0 0 10px lightgreen;
+}
